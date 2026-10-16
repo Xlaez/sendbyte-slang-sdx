@@ -1,0 +1,14 @@
+# macOS Finder metadata, in any directory. Exact case: git matches this
+# case-insensitively on a macOS checkout but not on Linux, where other
+# spellings let nested copies (src/.DS_Store, examples/.DS_Store, ...)
+# slip into commits.
+.DS_Store
+
+# `slangc --run file.sl` leaves a binary named after its source next to
+# it; examples/send.sl would produce `send` here.
+send
+sendbyte
+main
+
+# `slangc --emit-c` output when run inside this tree
+*.gen.c
